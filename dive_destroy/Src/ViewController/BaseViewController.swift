@@ -17,3 +17,17 @@ class BaseViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 }
+
+
+// MARK: - ViewController actions
+
+extension BaseViewController {
+    
+    func pushViewController(viewController: UIViewController) {
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func popViewController() {
+        self.navigationController?.popViewController(animated: true)
+    }
+}

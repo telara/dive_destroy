@@ -13,6 +13,20 @@ class RootViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        title = "Dive & Destroy"
     }
+    
+}
+
+
+// MARK: - IBActions
+
+extension RootViewController {
+    
+    @IBAction func pressedStartButton(_ sender: UIButton) {
+        let viewController = SelectPlayerViewController(nibName:"SelectPlayerView", bundle:nil)
+        
+        pushViewController(viewController: viewController)
+    }
+    
 }

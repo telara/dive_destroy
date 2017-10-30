@@ -16,10 +16,12 @@
 		57913A511FA62ED6005F67D6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57913A421FA62ED6005F67D6 /* BaseViewController.swift */; };
 		57913A521FA62ED6005F67D6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57913A431FA62ED6005F67D6 /* RootViewController.swift */; };
 		57913A531FA62ED6005F67D6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57913A431FA62ED6005F67D6 /* RootViewController.swift */; };
-		57913A541FA62ED6005F67D6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57913A451FA62ED6005F67D6 /* Info.plist */; };
-		57913A551FA62ED6005F67D6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57913A451FA62ED6005F67D6 /* Info.plist */; };
 		57913A561FA62ED6005F67D6 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57913A471FA62ED6005F67D6 /* RootView.xib */; };
-		57913A571FA62ED6005F67D6 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57913A471FA62ED6005F67D6 /* RootView.xib */; };
+		E24B40811FA7CA750037EAED /* SelectPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24B40801FA7CA750037EAED /* SelectPlayerViewController.swift */; };
+		E24B40831FA7CB170037EAED /* SelectPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24B40821FA7CB170037EAED /* SelectPlayerView.xib */; };
+		E2AD296E1FA7D20500852D67 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD296D1FA7D20500852D67 /* ErrorMessage.swift */; };
+		E2AD29701FA7D40D00852D67 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD296F1FA7D40D00852D67 /* GameViewController.swift */; };
+		E2AD29721FA7D42700852D67 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AD29711FA7D42700852D67 /* GameView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,11 @@
 		57913A431FA62ED6005F67D6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		57913A451FA62ED6005F67D6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57913A471FA62ED6005F67D6 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+		E24B40801FA7CA750037EAED /* SelectPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayerViewController.swift; sourceTree = "<group>"; };
+		E24B40821FA7CB170037EAED /* SelectPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPlayerView.xib; sourceTree = "<group>"; };
+		E2AD296D1FA7D20500852D67 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		E2AD296F1FA7D40D00852D67 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E2AD29711FA7D42700852D67 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				57913A401FA62ED6005F67D6 /* AppDelegate.swift */,
+				E2AD296C1FA7D1D200852D67 /* Exceptions */,
 				57913A411FA62ED6005F67D6 /* ViewController */,
 			);
 			path = Src;
@@ -123,6 +131,8 @@
 			children = (
 				57913A421FA62ED6005F67D6 /* BaseViewController.swift */,
 				57913A431FA62ED6005F67D6 /* RootViewController.swift */,
+				E24B40801FA7CA750037EAED /* SelectPlayerViewController.swift */,
+				E2AD296F1FA7D40D00852D67 /* GameViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -139,8 +149,18 @@
 			isa = PBXGroup;
 			children = (
 				57913A471FA62ED6005F67D6 /* RootView.xib */,
+				E24B40821FA7CB170037EAED /* SelectPlayerView.xib */,
+				E2AD29711FA7D42700852D67 /* GameView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E2AD296C1FA7D1D200852D67 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				E2AD296D1FA7D20500852D67 /* ErrorMessage.swift */,
+			);
+			path = Exceptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57913A561FA62ED6005F67D6 /* RootView.xib in Resources */,
-				57913A541FA62ED6005F67D6 /* Info.plist in Resources */,
+				E2AD29721FA7D42700852D67 /* GameView.xib in Resources */,
+				E24B40831FA7CB170037EAED /* SelectPlayerView.xib in Resources */,
 				57913A481FA62ED6005F67D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,8 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57913A571FA62ED6005F67D6 /* RootView.xib in Resources */,
-				57913A551FA62ED6005F67D6 /* Info.plist in Resources */,
 				57913A491FA62ED6005F67D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57913A4E1FA62ED6005F67D6 /* AppDelegate.swift in Sources */,
+				E24B40811FA7CA750037EAED /* SelectPlayerViewController.swift in Sources */,
+				E2AD296E1FA7D20500852D67 /* ErrorMessage.swift in Sources */,
 				57913A501FA62ED6005F67D6 /* BaseViewController.swift in Sources */,
+				E2AD29701FA7D40D00852D67 /* GameViewController.swift in Sources */,
 				57913A521FA62ED6005F67D6 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +413,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPB6523ZKB;
 				INFOPLIST_FILE = "$(SRCROOT)/dive_destroy/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tara.elsen.dive-destroy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPB6523ZKB;
 				INFOPLIST_FILE = "$(SRCROOT)/dive_destroy/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tara.elsen.dive-destroy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPB6523ZKB;
 				INFOPLIST_FILE = dive_destroy2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tara.elsen.dive-destroy2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QPB6523ZKB;
 				INFOPLIST_FILE = dive_destroy2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tara.elsen.dive-destroy2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
