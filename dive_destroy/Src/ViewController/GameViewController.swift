@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SpriteKit
 
 class GameViewController: BaseViewController {
+    
+    @IBOutlet weak var spriteView: GameFieldView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +19,14 @@ class GameViewController: BaseViewController {
         title = "Game"
     }
     
+}
+
+
+// MARK: - Scene
+
+extension GameViewController {
+    
+    func setupScene() {
+        
+    }
 }

@@ -24,8 +24,11 @@ class RootViewController: BaseViewController {
 extension RootViewController {
     
     @IBAction func pressedStartButton(_ sender: UIButton) {
-        let viewController = SelectPlayerViewController(nibName:"SelectPlayerView", bundle:nil)
+//        let viewController = SelectPlayerViewController(nibName:"SelectPlayerView", bundle:nil)
+//
+//        pushViewController(viewController: viewController)
         
+        let viewController = GameViewController(nibName: "GameView" , bundle: nil)
         pushViewController(viewController: viewController)
     }
     

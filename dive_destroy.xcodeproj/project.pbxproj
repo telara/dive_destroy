@@ -19,6 +19,12 @@
 		57913A561FA62ED6005F67D6 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57913A471FA62ED6005F67D6 /* RootView.xib */; };
 		E24B40811FA7CA750037EAED /* SelectPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24B40801FA7CA750037EAED /* SelectPlayerViewController.swift */; };
 		E24B40831FA7CB170037EAED /* SelectPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24B40821FA7CB170037EAED /* SelectPlayerView.xib */; };
+		E24CF0C51FE5C48C00A4A45C /* GameFieldTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CF0C41FE5C48C00A4A45C /* GameFieldTile.swift */; };
+		E25F76BB1FE5BAA000F78C4F /* DDSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F76BA1FE5BAA000F78C4F /* DDSKScene.swift */; };
+		E25F76BD1FE5BB4800F78C4F /* DDSKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F76BC1FE5BB4800F78C4F /* DDSKView.swift */; };
+		E25F76BF1FE5BC9800F78C4F /* DDSKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F76BE1FE5BC9800F78C4F /* DDSKNode.swift */; };
+		E25F76C21FE5BCED00F78C4F /* GameFieldScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F76C11FE5BCED00F78C4F /* GameFieldScene.swift */; };
+		E25F76C41FE5BD6300F78C4F /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25F76C31FE5BD6300F78C4F /* GameFieldView.swift */; };
 		E2AD296E1FA7D20500852D67 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD296D1FA7D20500852D67 /* ErrorMessage.swift */; };
 		E2AD29701FA7D40D00852D67 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD296F1FA7D40D00852D67 /* GameViewController.swift */; };
 		E2AD29721FA7D42700852D67 /* GameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AD29711FA7D42700852D67 /* GameView.xib */; };
@@ -47,6 +53,12 @@
 		57913A471FA62ED6005F67D6 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
 		E24B40801FA7CA750037EAED /* SelectPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPlayerViewController.swift; sourceTree = "<group>"; };
 		E24B40821FA7CB170037EAED /* SelectPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectPlayerView.xib; sourceTree = "<group>"; };
+		E24CF0C41FE5C48C00A4A45C /* GameFieldTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldTile.swift; sourceTree = "<group>"; };
+		E25F76BA1FE5BAA000F78C4F /* DDSKScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDSKScene.swift; sourceTree = "<group>"; };
+		E25F76BC1FE5BB4800F78C4F /* DDSKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDSKView.swift; sourceTree = "<group>"; };
+		E25F76BE1FE5BC9800F78C4F /* DDSKNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDSKNode.swift; sourceTree = "<group>"; };
+		E25F76C11FE5BCED00F78C4F /* GameFieldScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldScene.swift; sourceTree = "<group>"; };
+		E25F76C31FE5BD6300F78C4F /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
 		E2AD296D1FA7D20500852D67 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		E2AD296F1FA7D40D00852D67 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E2AD29711FA7D42700852D67 /* GameView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameView.xib; sourceTree = "<group>"; };
@@ -121,6 +133,7 @@
 			children = (
 				57913A401FA62ED6005F67D6 /* AppDelegate.swift */,
 				E2AD296C1FA7D1D200852D67 /* Exceptions */,
+				E25F76B81FE5B9A900F78C4F /* SpriteKit */,
 				57913A411FA62ED6005F67D6 /* ViewController */,
 			);
 			path = Src;
@@ -153,6 +166,35 @@
 				E2AD29711FA7D42700852D67 /* GameView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E25F76B81FE5B9A900F78C4F /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				E25F76B91FE5BA9700F78C4F /* Base */,
+				E25F76C01FE5BCC800F78C4F /* GameField */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		E25F76B91FE5BA9700F78C4F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E25F76BA1FE5BAA000F78C4F /* DDSKScene.swift */,
+				E25F76BC1FE5BB4800F78C4F /* DDSKView.swift */,
+				E25F76BE1FE5BC9800F78C4F /* DDSKNode.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E25F76C01FE5BCC800F78C4F /* GameField */ = {
+			isa = PBXGroup;
+			children = (
+				E25F76C11FE5BCED00F78C4F /* GameFieldScene.swift */,
+				E25F76C31FE5BD6300F78C4F /* GameFieldView.swift */,
+				E24CF0C41FE5C48C00A4A45C /* GameFieldTile.swift */,
+			);
+			path = GameField;
 			sourceTree = "<group>";
 		};
 		E2AD296C1FA7D1D200852D67 /* Exceptions */ = {
@@ -269,6 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				57913A4E1FA62ED6005F67D6 /* AppDelegate.swift in Sources */,
+				E25F76BB1FE5BAA000F78C4F /* DDSKScene.swift in Sources */,
+				E25F76BF1FE5BC9800F78C4F /* DDSKNode.swift in Sources */,
+				E25F76C21FE5BCED00F78C4F /* GameFieldScene.swift in Sources */,
+				E25F76C41FE5BD6300F78C4F /* GameFieldView.swift in Sources */,
+				E25F76BD1FE5BB4800F78C4F /* DDSKView.swift in Sources */,
+				E24CF0C51FE5C48C00A4A45C /* GameFieldTile.swift in Sources */,
 				E24B40811FA7CA750037EAED /* SelectPlayerViewController.swift in Sources */,
 				E2AD296E1FA7D20500852D67 /* ErrorMessage.swift in Sources */,
 				57913A501FA62ED6005F67D6 /* BaseViewController.swift in Sources */,

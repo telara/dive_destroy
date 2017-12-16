@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="dive_destroy" customModuleProvider="target">
             <connections>
+                <outlet property="spriteView" destination="Tzk-FK-z9A" id="x8b-bo-xwf"/>
                 <outlet property="view" destination="iN0-l3-epB" id="2es-uA-sVe"/>
             </connections>
         </placeholder>
@@ -26,8 +27,17 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzk-FK-z9A" customClass="GameFieldView" customModule="dive_destroy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </skView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tzk-FK-z9A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2Gv-nz-qPy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tzk-FK-z9A" secondAttribute="trailing" id="Nk0-B7-h2M"/>
+                <constraint firstItem="Tzk-FK-z9A" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Xcp-c3-Pmp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Tzk-FK-z9A" secondAttribute="bottom" id="a0p-kD-rkX"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
         </view>
     </objects>
